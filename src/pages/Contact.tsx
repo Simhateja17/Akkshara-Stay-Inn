@@ -114,14 +114,14 @@ const Contact: React.FC = () => {
                         Follow Us
                       </h3>
                       <div className="flex space-x-4">
-                        <a 
-                          href="#"
+                        <button 
+                          type="button"
                           className="w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center text-white transition-colors duration-300"
                           aria-label="Facebook"
-                          onClick={e => { e.preventDefault(); alert('Facebook page coming soon!'); }}
+                          onClick={() => { alert('Facebook page coming soon!'); }}
                         >
                           <FaFacebook className="w-5 h-5" />
-                        </a>
+                        </button>
                         <a 
                           href="https://www.instagram.com/akkshara_homestay_tirupati/"
                           target="_blank"
