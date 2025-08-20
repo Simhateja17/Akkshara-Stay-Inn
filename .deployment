@@ -1,0 +1,2 @@
+[config]
+command = "serve -s build -l 8080"
