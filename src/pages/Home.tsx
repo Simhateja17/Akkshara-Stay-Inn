@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 import { FaRegClock, FaBed, FaMapMarkerAlt, FaUtensils, FaCheck } from 'react-icons/fa';
+import RoomCarousel from '../components/RoomCarousel';
 
 const Home: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -110,6 +111,9 @@ const Home: React.FC = () => {
           <ChevronRightIcon className="h-8 w-8" />
         </button>
       </section>
+
+      {/* Room Carousel Section */}
+      <RoomCarousel />
 
       {/* About Homestay Section */}
       <section className="py-20 bg-white">
